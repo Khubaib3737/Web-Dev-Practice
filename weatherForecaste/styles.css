@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #7b74ca;
+    color: #495057;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Container */
+.container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Heading Styles */
+h2 {
+    color: #343a40;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Button Container */
+.button-container {
+    margin-bottom: 20px; /* Spacing between buttons and table */
+}
+
+/* Button Styles */
+button {
+    background-color: #007bff; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 15px 25px; /* Padding */
+    text-align: center; /* Center-aligned text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline-block display */
+    font-size: 16px; /* Font size */
+    margin: 10px; /* Margin around buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+/* Button Hover Effects */
+button:hover {
+    background-color: #0056b3; /* Darker blue background on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Button Focus Styles */
+button:focus {
+    outline: none; /* Remove outline on focus */
+}
+
+/* Table Styles */
+table {
+    width: 100%; /* Full-width table */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+th, td {
+    border: 1px solid #dee2e6; /* Light gray border */
+    padding: 12px; /* Padding inside cells */
+    text-align: center; /* Center align text */
+}
+
+th {
+    background-color: #007bff; /* Blue background for header */
+    color: white; /* White text in header */
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa; /* Light gray background for even rows */
+}
+
+tr:hover {
+    background-color: #e9ecef; /* Slightly darker gray background on row hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    button {
+        width: 100%; /* Full-width buttons on small screens */
+        padding: 12px; /* Adjust padding */
+    }
+
+    table {
+        font-size: 14px; /* Smaller font size for small screens */
+    }
+}
